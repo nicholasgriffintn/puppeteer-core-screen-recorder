@@ -1,6 +1,6 @@
 {
-  "name": "puppeteer-screen-recorder",
-  "version": "3.0.3",
+  "name": "puppeteer-core-screen-recorder",
+  "version": "3.0.3-patch.1",
   "description": "A puppeteer Plugin that uses the native chrome devtool protocol for capturing video frame by frame. Also supports an option to follow pages that are opened by the current page object",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
@@ -88,7 +88,7 @@
     "@ffmpeg-installer/ffmpeg": "^1.1.0"
   },
   "peerDependencies": {
-    "puppeteer": ">=19.0.0"
+    "puppeteer-core": ">=19.0.0"
   },
   "devDependencies": {
     "@ava/typescript": "^1.1.1",
@@ -110,11 +110,11 @@
     "nyc": "^15.1.0",
     "open-cli": "^6.0.1",
     "prettier": "^2.1.1",
-    "puppeteer": "^6.0.0",
+    "puppeteer-core": "^19.11.1",
     "standard-version": "^9.0.0",
     "ts-node": "^9.0.0",
     "typedoc": "^0.19.0",
-    "typescript": "^4.0.2"
+    "typescript": "^4.7.4"
   },
   "files": [
     "build/main",

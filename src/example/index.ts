@@ -1,7 +1,7 @@
 import fs from 'fs';
 import { PassThrough } from 'stream';
 
-import puppeteer from 'puppeteer';
+import puppeteer from 'puppeteer-core';
 
 import { PuppeteerScreenRecorder } from '../lib/PuppeteerScreenRecorder';
 
@@ -23,7 +23,7 @@ async function testStartMethod(format: string, isStream: boolean) {
     await recorder.start(format);
   }
   await page.goto('https://developer.mozilla.org/en-US/docs/Web/CSS/animation');
-  await page.waitFor(10 * 1000);
+  await page.waitForTimeout(10 * 1000);
   await recorder.stop();
   await browser.close();
 }
